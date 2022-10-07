@@ -40,7 +40,7 @@ const MyNavBar = () => {
                                 Login
                             </Nav.Link> : <Nav.Link to='/user' as={Link} className='link-item'>
                                 <i className="fa-regular fa-user"></i>
-                                {user.firstName}
+                                {localStorage.getItem('userName')}
                             </Nav.Link>}
                         </Nav>
                     </Navbar.Collapse>

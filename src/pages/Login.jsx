@@ -20,8 +20,11 @@ const Login = () => {
             .then(res => {
                 console.log(res.data);
                 localStorage.setItem('token', res.data.data.token)
+                localStorage.setItem('userName', res.data.data.user.firstName + " " + res.data.data.user.lastName);
+                localStorage.setItem('email', res.data.data.user.email)
+                localStorage.setItem('phone', res.data.data.user.phone)
                 navigate('/');
-                dispatch(setUser(res.data.data.user));
+                // dispatch(setUser(res.data.data.user));
             })
             .catch(error => {
                 if (error.response?.status === 404) {
