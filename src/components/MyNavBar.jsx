@@ -3,20 +3,16 @@ import '../styles/navbar.css';
 import { Button, Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import CartSideBar from './CartSideBar';
-import { useSelector } from 'react-redux';
 
 const MyNavBar = () => {
 
     const navigate = useNavigate();
     const token = localStorage.getItem("token");
-    const user = useSelector(state => state.user);
 
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    console.log(user);
 
     return (
         <>

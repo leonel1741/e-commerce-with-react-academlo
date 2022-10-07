@@ -8,7 +8,7 @@ import { Navigate, useNavigate } from 'react-router-dom';
 const UserDetail = () => {
 
     const navigate = useNavigate();
-    // const user = useSelector(state => state.user);
+
     const logout = () => {
         localStorage.setItem("token", "");
         localStorage.setItem("userName", "");
@@ -16,8 +16,6 @@ const UserDetail = () => {
         localStorage.setItem("phone", "");
         navigate("/login");
     };
-
-    // console.log(user);
 
     return (
         <div className='user-detail-container'>
