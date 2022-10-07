@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getProductsThunk());
-  }, [])
+  }, [localStorage.getItem('token')])
 
   return (
     <HashRouter>
