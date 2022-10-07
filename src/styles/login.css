@@ -1,0 +1,95 @@
+
+.form-login {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0px gray;
+}
+
+.form-login p {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.message-alert {
+    letter-spacing: 0;
+    color: rgb(6, 168, 255);
+    /* font-size: 15px; */
+    text-align: center;
+}
+
+.test-data {
+    background-color: rgb(208, 242, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.test-data p {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+.test-data-item {
+    letter-spacing: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.change-login {
+    display: flex;
+    gap: 1rem;
+}
+
+.change-login {
+    font-size: 14.4px;
+    letter-spacing: 0;
+}
+
+.change-login a{
+    text-decoration: none;
+    color: rgb(6, 168, 255);
+    transition: .2s ease;
+}
+
+.change-login a:hover {
+    transform: scale(1.03);
+    color: rgb(6, 168, 255);
+}
+
+/*----- Create Section -----*/
+
+.form-create {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0px gray;
+    letter-spacing: 0;
+    font-family: sans-serif;
+    background-color: #FFF;
+}
+
+.form-create p {
+    font-size: 24px;
+    font-weight: bold;
+}
+

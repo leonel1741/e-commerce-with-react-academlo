@@ -1,0 +1,50 @@
+
+.user-detail-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-detail-item {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+    gap: 20px;
+    box-shadow: 0 0 10px 0 rgb(102, 102, 102);
+}
+
+.image-perfil {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-perfil img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.user-name {
+    text-align: center;
+    font-size: 20px;
+}
+
+.user-detail-item p {
+    font-weight: bold;
+}
+
+.user-detail-item Button {
+    border-radius: 10px;
+    transition: .5s all linear;
+}
+
+.user-detail-item Button:hover {
+    transform: scale(1.1);
+}
