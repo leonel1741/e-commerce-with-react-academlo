@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import { ListGroup } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-
 import { getPruchasesThunk } from '../store/slices/purchases.slice';
 
 const Purchases = () => {

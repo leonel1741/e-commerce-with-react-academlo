@@ -15,14 +15,14 @@ export const cartSlice = createSlice({
 
 export const getCartThunk = () => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.get('https://ecommerce-api-react.herokuapp.com/api/v1/cart', getConfig())
+    return axios.get('https://e-commerce-api.academlo.tech/api/v1/cart', getConfig())
         .then( res => dispatch(setCart(res.data.data.cart.products)))
         .finally(() => setIsLoading(false))
 }
 
 export const addCartThunk = (purchase) => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.post('https://ecommerce-api-react.herokuapp.com/api/v1/cart', 
+    return axios.post('https://e-commerce-api.academlo.tech/api/v1/cart', 
         purchase,
         getConfig()
         )
@@ -33,14 +33,14 @@ export const addCartThunk = (purchase) => (dispatch) => {
 
 export const purchaseCartThunk = () => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.post('https://ecommerce-api-react.herokuapp.com/api/v1/purchases', {}, getConfig())
+    return axios.post('https://e-commerce-api.academlo.tech/api/v1/purchases', {}, getConfig())
         .then(() => dispatch(setCart([])))
         .finally(() => dispatch(setIsLoading(false)));
 }
 
 export const deleteProductCartThunk = (id) => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.delete(`https://ecommerce-api-react.herokuapp.com/api/v1/cart/${id}`, getConfig())
+    return axios.delete(`https://e-commerce-api.academlo.tech/api/v1/cart/${id}`, getConfig())
         .then(() => dispatch(getCartThunk()))
         .finally(() => dispatch(setIsLoading(false)))
         .catch(error => console.log(error.response))
